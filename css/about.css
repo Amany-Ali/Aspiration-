@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    transition: all .7s;
+}
+nav ul li .txt {
+    font-size: 14px  !important;
+}
+nav ul li .txt:hover{
+    color: #0028ff !important;
+}
+nav .logo {
+    font-size: 25px !important;
+    position: relative;
+}
+
+.logo::after {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    content: '';
+    width: 75%;
+    height: 3px;
+    background: #fff;
+}
+header {
+    background-image:url(../images/bg_2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
+    
+    
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background: rgba(0, 40, 255 ,.3);
+    z-index: 1;
+    
+}
+header .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.toGoHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.toGoHome p {
+    position: absolute;
+    bottom: 20%;
+}
+header h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Oswald", Arial, sans-serif;
+    width:60%;
+    margin:auto;
+
+}
+
+/*....................................about section .........................*/
+.about .txt {
+    color:#0028ff;
+    font-size:18px;
+}
+.about h2 > span {
+    font-size: 50px !important;
+}
+.about h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: "Oswald", Arial, sans-serif;
+
+}
+/************************************* success stories   ******************/
+.stories {
+    /* background-color: #f8f9fa; */
+    
+    overflow: hidden;
+}
+.stories h2 {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+.stories h4{
+    font-family: "Oswald", Arial, sans-serif;
+}
+.stories .txt {
+    color:#666;
+    line-height: 1.6;
+    font-size: 22px;
+}
+.stories .slider{
+    width:400%;
+    animation: animate 10s linear 1s infinite alternate;
+    position: relative;
+    
+}
+.sliderContainer{
+    overflow: hidden;
+
+}
+.slide{
+    width:25%;
+    
+    overflow: hidden;
+    
+}
+@keyframes animate {
+    0% {
+        left:0;
+    }
+    10% {
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30% {
+        left:-100%
+    }
+   40% {
+       left:-100%;
+   }
+   50%{
+       left:-200%;
+   }
+   60%{
+       left:-200%;
+   }
+   70% {
+       left:-200%;
+   }
+   80%{
+       left:-300%;
+   }
+   90%{
+       left:-300%;
+   }
+       
+   100% {
+        left:-300%;
+   }
+    
+}
+/*.........................................footer....................*/
+footer {
+    background-image: linear-gradient(rgba(0, 40, 255 ,.5), rgba(0, 40, 255 ,.5)),url(../images/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+footer .txt {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .icon {
+    font-size:20px;
+}
+
+
+
+@media screen and (max-width:767px){
+    .about h2 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    transition: all .7s;
+}
+nav ul li .txt {
+    font-size: 14px  !important;
+}
+nav ul li .txt:hover{
+    color: #0028ff !important;
+}
+nav .logo {
+    font-size: 25px !important;
+    position: relative;
+}
+
+.logo::after {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    content: '';
+    width: 75%;
+    height: 3px;
+    background: #fff;
+}
+header {
+    background-image:url(../images/bg_2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
+    
+    
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background: rgba(0, 40, 255 ,.3);
+    z-index: 1;
+    
+}
+header .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.toGoHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.toGoHome p {
+    position: absolute;
+    bottom: 20%;
+}
+header h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Oswald", Arial, sans-serif;
+    width:60%;
+    margin:auto;
+
+}
+
+/****************************** causes section **************/
+.causes .left{
+    float: left;
+    /* padding: 15px; */
+    width:25%;
+}
+.causes .right{
+    float: left;
+    padding-left: 20px;
+    width:75%;
+    text-align: left;
+}
+.causes h3 , .position_div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Work Sans", Arial, sans-serif;
+ }
+.causes h3 a , .position_div h3 a{
+    text-decoration: none;
+    color:#000000;
+    transition-property:color ;
+    transition-duration: .7s;
+    transition-timing-function: ease-in;
+}
+.causes .right>a , .position_div>a{
+    text-decoration: none;
+    font-size:18px;
+    color:gray;
+    
+}
+.causes h3 a:hover , .position_div h3 a:hover{
+    color: #0028ff;
+    
+}
+.causes .right>a:hover , .position_div>a:hover{
+    color:#666666;
+}
+.causes img {
+    height: 110px;
+    width:100%;
+}
+.clear {
+    clear:both;
+}
+.priorities .image {
+    height: 250px !important;
+}
+
+.priorities {
+    overflow: hidden !important;
+}
+
+/****************************change ********************/
+.change {
+    overflow: hidden;
+}
+/*.........................................footer....................*/
+footer {
+    background-image: linear-gradient(rgba(0, 40, 255 ,.5), rgba(0, 40, 255 ,.5)),url(../images/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+footer .txt {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .icon {
+    font-size:20px;
+}
+
+@media screen and (max-width:767px){
+    
+    h1{
+       font-size: 30px !important;
+    }
+}

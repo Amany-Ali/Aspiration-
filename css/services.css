@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    transition: all .7s;
+    
+}
+.container {
+    width:90% !important;
+    margin: auto;
+}
+nav ul li .txt {
+    font-size: 14px  !important;
+}
+nav ul li .txt:hover{
+    color: #0028ff !important;
+}
+nav .logo {
+    font-size: 25px !important;
+    position: relative;
+}
+
+.logo::after {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    content: '';
+    width: 75%;
+    height: 3px;
+    background: #fff;
+}
+header {
+    background-image:url(../images/bg_2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
+    
+    
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background: rgba(0, 40, 255 ,.3);
+    z-index: 1;
+    
+}
+header .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.toGoHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.toGoHome p {
+    position: absolute;
+    bottom: 20%;
+}
+header h1{
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Oswald", Arial, sans-serif;
+    width:60%;
+    margin:auto;
+
+}
+/******************************************/
+.services .icon {
+    font-size:40px;
+}
+.services h2{
+    font-family: "Oswald", Arial, sans-serif;
+    text-transform: uppercase;
+}
+.services .row > div:hover {
+    color:#fff;
+    cursor: pointer;
+    background-color:#0028ff ;
+}
+.services .row > div:hover .icon {
+    color:#fff !important;
+}
+/*****************************************************************/
+.Foundation .txt {
+    margin-bottom: -10px !important;
+    color:#0028ff;
+}
+.Foundation span.text {
+    font-size: 35px;
+}
+/******************************becomeVolunteer********************************/
+.becomeVolunteer {
+    background-image: url(../images/bg_3.jpg);
+    position: relative;
+    z-index:-1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7rem;
+}
+
+.becomeVolunteer .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 40, 255 ,.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.becomeVolunteer h2 {
+    color:#fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: "Oswald", Arial, sans-serif;
+}
+
+/***************************Sponsorship*****************************/
+.Sponsorship h2 , .Foundation h2 {
+    font-size: 50px;
+    /* font-weight: 700; */
+    line-height: 1.4;
+    font-family: "Oswald", Arial, sans-serif;
+}
+
+/*.........................................footer....................*/
+footer {
+    background-image: linear-gradient(rgba(0, 40, 255 ,.5), rgba(0, 40, 255 ,.5)),url(../images/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+footer .txt {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .icon {
+    font-size:20px;
+}
+
+@media screen and (max-width:767px){
+    
+    h1{
+       font-size: 50px !important;
+    }
+    .Foundation > div , .Sponsorship > div {
+        width: 90% !important;
+        margin: auto;
+        
+    }
+}

@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    transition: all .7s;
+}
+nav ul li .txt {
+    font-size: 14px  !important;
+}
+nav ul li .txt:hover{
+    color: #0028ff !important;
+}
+nav .logo {
+    font-size: 25px !important;
+    position: relative;
+}
+
+.logo::after {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    content: '';
+    width: 75%;
+    height: 3px;
+    background: #fff;
+}
+header {
+    background-image:url(../images/bg_2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
+    
+    
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background: rgba(0, 40, 255 ,.3);
+    z-index: 1;
+    
+}
+header .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.toGoHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.toGoHome p {
+    position: absolute;
+    bottom: 20%;
+}
+header h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Oswald", Arial, sans-serif;
+    width:60%;
+    margin:auto;
+
+}
+
+/**************************************blog**********************************/
+.search {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+.search .icon {
+    right:20px;
+    bottom: 25px;
+    color:#686565;
+}
+::placeholder {
+    font-size: 14px;
+}
+.blog h3{
+        font-size: 24px;
+        margin-bottom: 16px;
+        font-weight: 500;
+}
+
+.categories li {
+    border-bottom: 1px solid #bab7b7;
+    padding: 10px 0;
+}
+.categories li:last-child{
+    border-bottom: none;
+}
+.categories li span{
+    right:0 !important;
+    bottom:10px;
+}
+/**********************************************************/
+.change {
+    overflow: hidden;
+}
+/*.........................................footer....................*/
+footer {
+    background-image: linear-gradient(rgba(0, 40, 255 ,.5), rgba(0, 40, 255 ,.5)),url(../images/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+footer .txt {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .icon {
+    font-size:20px;
+}

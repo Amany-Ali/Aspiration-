@@ -1,0 +1,382 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#mybtn {
+    position: fixed;
+    bottom: 30px;
+    right:30px;
+    z-index: 999;
+    box-shadow: 2px 3px rgba(0,0,0,.3);
+    display: none;
+}
+nav {
+    transition: background-color 1s !important;
+}
+nav ul li .txt {
+    font-size: 14px  !important;
+}
+nav ul li .txt:hover{
+    color: #0028ff !important;
+}
+nav .logo {
+    font-size: 25px !important;
+    position: relative;
+}
+
+.logo::after {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    content: '';
+    width: 75%;
+    height: 3px;
+    background: #fff;
+}
+header {
+    background-image:url(../images/bg_4.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50.5%;
+    bottom: 0;
+    background: rgb(0, 40, 255 ,.5);
+    z-index: 1;
+    
+}
+header .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+header h1{
+    text-align: center;
+    font-size: 7vw;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Oswald", Arial, sans-serif;
+
+}
+
+/* ----------------------------------- about section ---------------------------- */
+
+.about h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.about .left-div {
+    background-image: url(../images/about.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.left-div button {
+    color:#fff;
+    background-color:#0028ff ;
+}
+.about .pragraph{
+    color: rgba(255, 255, 255, 0.9);
+}
+.about .right-div {
+    background-color:#0028ff ;
+}
+.about h2 span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*******************************Foundation**********************************/
+.Foundation .txt {
+    margin-bottom: -5px !important;
+    color:#0028ff;
+   
+}
+.Foundation span.text {
+    font-size: 35px;
+}
+/*********************************************/
+.becomeVolunteer {
+    background-image: url(../images/bg_3.jpg);
+    position: relative;
+    z-index:-1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7rem;
+}
+
+.becomeVolunteer .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 40, 255 ,.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.becomeVolunteer h2 {
+    color:#fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: "Oswald", Arial, sans-serif;
+}
+.priorities .pragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: #666666;
+}
+.progress {
+   margin-top: -15px !important;
+}
+.counter-box {
+    background-image: linear-gradient(rgba(0, 40, 255 ,.5), rgba(0, 40, 255 ,.5)),url(../images/bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.counter-box .row {
+    display: flex;
+    align-items: center;
+    
+}
+.counter-box p{
+    font-family: "Oswald", Arial, sans-serif;
+    color:#fff;
+    font-weight: 700px;
+    letter-spacing: 1px;
+}
+.child {
+    width: 25%;
+    text-align: center;
+    padding: 30px 0;
+}
+.counter-box .counter{
+    font-size: 50px;
+    letter-spacing: 0;
+}
+.blog {
+    padding: 50px 0;
+    text-align: center;
+}
+.blog h2 , .priorities h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: "Oswald", Arial, sans-serif;
+}
+.blog p {
+    color: rgb(135, 134, 134);
+    padding:20px 0;
+    font-size: 20px;
+    font-family:  Arial, sans-serif;
+    font-weight: 100;
+}
+.blog .part {
+    margin: 20px 0;
+ }
+.blog .causes  {
+    background-color: rgb(243, 242, 242);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding:1rem;
+}
+.blog .part > img {
+    height: 100%;
+    
+}
+.blog .position_div {
+    width:90%;
+    text-align:center !important;
+    bottom:0px;
+    left:15px;
+    margin:auto;
+    padding: 10px 0;
+    background-color: rgb(243, 242, 242);
+}
+
+
+/****************************** causes section **************/
+.causes .left{
+    float: left;
+    /* padding: 15px; */
+    width:25%;
+}
+.causes .right{
+    float: left;
+    padding-left: 20px;
+    width:75%;
+    text-align: left;
+}
+.causes h3 , .position_div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Work Sans", Arial, sans-serif;
+ }
+.causes h3 a , .position_div h3 a{
+    text-decoration: none;
+    color:#000000;
+    transition-property:color ;
+    transition-duration: .7s;
+    transition-timing-function: ease-in;
+}
+.causes .right>a , .position_div>a{
+    text-decoration: none;
+    font-size:18px;
+    color:gray;
+    
+}
+.causes h3 a:hover , .position_div h3 a:hover{
+    color: #0028ff;
+    
+}
+.causes .right>a:hover , .position_div>a:hover{
+    color:#666666;
+}
+.causes img {
+    height: 110px;
+    width:100%;
+}
+.clear {
+    clear:both;
+}
+@media screen and (max-width:767px){
+    
+    .blog .part {
+        margin: 20px 0;
+        width:100%;
+    
+    }
+    
+    .position_div{
+        margin-bottom: 0;
+    }
+    .blog .causes , .position_div {
+        margin-bottom: 30px;
+    }
+
+    h1{
+       font-size: 50px !important;
+    }
+    .Foundation > div  {
+        width: 90% !important;
+        margin: auto;
+        
+    }
+    
+}
+
+
+/************************************* success stories   ******************/
+.stories {
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+.stories h2 {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+.stories h4{
+    font-family: "Oswald", Arial, sans-serif;
+}
+.stories .txt {
+    color:#666;
+    line-height: 1.6;
+    font-size: 22px;
+}
+.stories .slider{
+    width:400%;
+    animation: animate 10s linear 1s infinite alternate;
+    position: relative;
+    
+}
+.sliderContainer{
+    overflow: hidden;
+
+}
+.slide{
+    width:25%;
+    
+    overflow: hidden;
+    
+}
+@keyframes animate {
+    0% {
+        left:0;
+    }
+    10% {
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30% {
+        left:-100%
+    }
+   40% {
+       left:-100%;
+   }
+   50%{
+       left:-200%;
+   }
+   60%{
+       left:-200%;
+   }
+   70% {
+       left:-200%;
+   }
+   80%{
+       left:-300%;
+   }
+   90%{
+       left:-300%;
+   }
+       
+   100% {
+        left:-300%;
+   }
+    
+}
+/*.........................................footer....................*/
+footer {
+    background-image: linear-gradient(rgba(0, 40, 255 ,.5), rgba(0, 40, 255 ,.5)),url(../images/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+footer .txt {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .icon {
+    font-size:20px;
+}
+
